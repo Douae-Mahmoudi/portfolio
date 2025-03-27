@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Home Section */
+#first-sect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.home-content {
+    max-width: 600px;
+    margin-right: 30px;
+}
+
+.first-img img {
+    border: 2px solid  burlywood;
+
+    width: 200px; /* Largeur fixe */
+    height: 200px; /* Hauteur identique */
+    border-radius: 50%; /* Rend l’image circulaire */
+    object-fit: cover; /* Remplit le cadre sans être écrasée */
+    display: block; /* Supprime les marges invisibles */
+    box-shadow: 0 0 25px beige;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+
+
+}
+
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    #first-sect {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        margin-right: 0;
+    }
+
+    .first-img img {
+      
+        border-radius: 50%; /* Rend l’image circulaire */
+        object-fit: cover; /* Remplit le cadre sans être écrasée */
+        display: block; /* Supprime les marges invisibles */
+        box-shadow: 0 0 25px beige;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+    
+}
+#nav-bar a:hover {
+	color: burlywood;
+}
+
+
+/* Icônes de contact à la fin du paragraphe */
+.contact-icons {
+   
+    margin-left: 30%;
+
+}
+
+.contact-icons a {
+    text-decoration: none; /* Retirer le soulignement des liens */
+    color: #333; /* Couleur des icônes */
+    font-size: 24px; /* Taille des icônes */
+    transition: color 0.3s ease; /* Effet de transition pour la couleur */
+}
+
+.contact-icons a:hover {
+    color: burlywood; /* Couleur au survol */
+}
+
+
+
+
+#main-footer {
+    width: 100%; /* Le footer prend toute la largeur */
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: fixed; /* Fixe le footer en bas de la page */
+    bottom: 0; /* Place-le au bas de la page */
+    left: 0; /* Aligne le footer à gauche */
+}
+
+/* P du footer */
+#main-footer p {
+    margin: 0;
+    font-size: 14px;
+}
